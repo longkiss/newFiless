@@ -27,9 +27,13 @@
         default: true
       }
     },
+    watch: {
+      position(val) {
+        console.log(val);
+      },
+    },
     data() {
       return {
-
       };
     },
     computed: {
