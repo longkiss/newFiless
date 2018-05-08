@@ -792,3 +792,101 @@ textarea {
     background: url("../static/checkbox-disabled.png") no-repeat center center;
     background-size: 100% 100%;
 }
+
+/* zx-switch */
+
+.zx-switch {
+    display: inline-block;
+    position: relative;
+}
+
+.zx-switch .zx-switch-wrap {
+    height: 25px;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    background: #ccc;
+    z-index: -2;
+}
+
+.zx-switch .zx-switch-wrap .dotted {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 0 2px #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: all ease 0.3s;
+}
+
+.zx-switch .zx-switch-wrap.uncheck .dotted {
+    left: 0;
+}
+
+.zx-switch .zx-switch-wrap.ischeck .dotted {
+    left: calc(100% - 25px);
+}
+
+.zx-switch .zx-switch-wrap .switch {
+    line-height: 25px;
+    border-radius: 25px;
+    height: 25px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 'background' ease 0.5s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.zx-switch .zx-switch-wrap .switch.check {
+    text-align: left;
+    color: white;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: 100%;
+}
+
+.zx-switch .zx-switch-wrap .switch.uncheck {
+    animation: uncheckWidthAnimate ease-in 0.3s;
+    text-align: right;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.zx-switch .zx-switch-wrap .switch-text {
+    font-size: 12px;
+    line-height: 25px;
+    min-width: 55px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.zx-switch .zx-switch-wrap.ischeck .switch-text {
+    color: white;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.zx-switch .zx-switch-wrap.uncheck .switch-text {
+    color: #132229;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+@keyframes uncheckWidthAnimate {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}

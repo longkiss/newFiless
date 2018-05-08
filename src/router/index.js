@@ -10,6 +10,7 @@ import popup from '@/components/popup';
 import dialog from '@/components/dialog';
 import radio from '@/components/radio';
 import checkbox from '@/components/checkbox';
+import switchs from '@/components/switch';
 
 Vue.use(Router);
 
@@ -65,6 +66,11 @@ export default new Router({
       path: '/checkbox',
       name: 'checkbox',
       component: checkbox
+    },
+    {
+      path: '/switch',
+      name: 'switch',
+      component: switchs
     }
   ]
 });

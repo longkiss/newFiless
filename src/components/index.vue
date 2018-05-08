@@ -38,6 +38,10 @@
         <span slot='left'>多选</span>
         <span slot='left'>checkbox</span>
       </zx-cell-item>
+      <zx-cell-item type='link' border arrow href='/switch'>
+        <span slot='left'>Switch</span>
+        <span slot='left'>Switch</span>
+      </zx-cell-item>
     </zx-cell-group>
   </div>
 </template>
