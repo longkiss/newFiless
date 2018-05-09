@@ -1,10 +1,10 @@
 <template>
-  <div class="zx-tab-c" :class="checkActive">
+  <!-- <div class="zx-tab-c" :class="checkActive">
     <slot></slot>
-  </div>
-  <!--<div class="zx-tab-c" :class="checkActiveName">
+  </div> -->
+  <div class="zx-tab-c" :class="checkActiveName">
         <slot></slot>
-    </div>-->
+    </div>
 </template>
 <script>
 export default {
